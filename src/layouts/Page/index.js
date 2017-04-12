@@ -5,7 +5,6 @@ import { BodyContainer, joinUri, Link } from "phenomic"
 
 import Button from "../../components/Button"
 import Loading from "../../components/Loading"
-import Hero from "../../components/Hero"
 import styles from "./index.css"
 
 const Page = (

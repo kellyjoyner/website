@@ -1,9 +1,7 @@
 import React, {PropTypes} from "react"
 import Helmet from "react-helmet"
-import { BodyContainer, joinUri, Link } from "phenomic"
+import { BodyContainer, joinUri } from "phenomic"
 import Loading from "../../components/Loading"
-import Button from "../../components/Button"
-import LatestPosts from "../../components/LatestPosts"
 import Icon from '../../components/Icon'
 
 import LinkedIn from '../../assets/icons/linkedin.svg'
