@@ -1,4 +1,4 @@
-export default function handleClickOutside(elem, event) {
+export default function handleClickAway(elem, event) {
   const e = window.event || event
 
   let el = eventTarget(e)
