@@ -1,8 +1,33 @@
 import React, { PropTypes } from "react"
 import { Link } from "phenomic"
 
-import handleClickAway from '../../utils/handleClickAway'
 import styles from "./index.css"
+
+
+function handleClickAway(elem, event) {
+  const e = window.event || event
+
+  let el = eventTarget(e)
+  while (el !== null) {
+    if (el === elem) {
+      return false
+    }
+    el = el.parentNode
+  }
+  return true
+}
+
+function eventTarget(event) {
+  let targ = event.target ? event.target : event.srcElement
+  if (targ !== null) {
+    if (targ.nodeType === 3) {
+      targ = targ.parentNode
+    }
+  }
+  return targ
+}
+
+
 
 class Header extends React.Component {
   constructor(props) {
